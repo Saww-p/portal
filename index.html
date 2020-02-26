@@ -16,10 +16,10 @@
 				</div>
 				<div class="hedaerSingBtns">
 					<div class="signInBtn">
-						<button id="signInBtnn">войти</button>
+						<a href="#">войти</button>
 					</div>
 					<div class="signUpBtn">
-						<a href="">регистрация</a>
+						<a href="#">регистрация</a>
 					</div>
 				</div>
 			</div>
@@ -115,21 +115,36 @@
 		</div>
 	</footer>
 
-	<div class="signInPopup">
+	<div class="signInPopupWr" style="display: none;">
 		<div class="signInPopupClose"></div>
-		<div class="signInPopupContent">
-			<div class="signInPopupTitle">Войти в аккаунт</div>
-			<div class="signInPopupInputs">
-				<input type="text" class="signInPopupInputLogin" placeholder="Логин">
-				<input type="text" class="signInPopupInputPassword" placeholder="Пароль">
-			</div>
-			<div class="signInPopupButtons">
-				<button>Войти</button>
+		<div class="signInPopup">
+			<div class="signInPopupContent">
+				<div class="signInPopupTitle">Войти в аккаунт</div>
+				<div class="signInPopupInputs">
+					<input type="text" class="signInPopupInputLogin" placeholder="Логин">
+					<input type="text" class="signInPopupInputPassword" placeholder="Пароль">
+				</div>
+				<div class="signInPopupButtons">
+					<button>Войти</button>
+				</div>
 			</div>
 		</div>
 	</div>
 	
 	<script src="http://code.jquery.com/jquery-3.2.1.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		
+		$('.signInBtn').on('click', (e) => {
+			e.preventDefault();
+			$('.signInPopupWr').fadeIn();
+		});
+
+		$('#signInPopupClose').on('click', (e) => {
+			e.preventDefault();
+			$('.signInPopupWr .signInPopupClose').hide();
+		});
+
+	</script>
 </body>
 </html>

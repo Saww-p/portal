@@ -14,6 +14,5 @@ $("#signInBtnn").on("click", function(){
 //Функция скрытия PopUp
 function PopUpHide(){
     $("#signInPopup").hide();
-    $("#signInPopup").show();
     $("#signUpPopup").hide();
 }
