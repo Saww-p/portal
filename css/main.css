@@ -169,23 +169,12 @@
 	position: fixed;
 	left: 0;
 	top: 0;
+	z-index: 1;
 	width: 100%;
 	height: 100vh;
 	background: rgba(0,0,0,0.5);
 }
 
-.singInPopup
-{
-	position: absolute;
-}
-
-.singInPopupClose
-{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background: #FEFEFE;
-}
 
 .signInPopup
 {
@@ -291,6 +280,15 @@
 
 
 
+.signUpPopupWr
+{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+}
+
 .signUpPopup
 {
 	width: 470px;
@@ -385,8 +383,4 @@
 {
 	margin-bottom: 27px;
 }
-
-signUpPopupInputs 
-
-
 /******************** SINGUP ********************/

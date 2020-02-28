@@ -84,12 +84,11 @@
 	color: #212121;
 }
 
-.newOrderAddPhoto, .newOrderSend
+.newOrderSend
 {
 	width: 310px;
 	height: 36px;
 	border: unset;
-
 	font-family: Roboto;
 	font-size: 16px;
 	line-height: 19px;
@@ -99,9 +98,33 @@
 
 .newOrderAddPhoto
 {
-	background-color: #5FB053;
+
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.newOrderAddPhoto + label {
+	border-radius: 4px;
+	text-align: center;
+	margin-top: 10px;
+
+	font-family: Roboto;
+	font-size: 16px;
+	line-height: 19px;
+	color: #FFFFFF;
+	
+	width: 310px;
+	padding: 9px 0;
+    color: white;
+    background-color: #5FB053;
+    display: inline-block;
 	margin-bottom: 20px;
 }
+
 
 .newOrderSend
 {
@@ -202,6 +225,7 @@
 {
 	align-self: center;
 }
+
 .userOrdersBtn button
 {
 	font-family: Montserrat;
@@ -217,4 +241,19 @@
 	margin-top: 113px;
 	margin-bottom: 113px;
 	border: unset;
+}
+
+.userCabinet
+{
+	display: flex;
+}
+
+.userCabinetImg
+{
+	margin-right: 20px;
+}
+
+.userCabinetName
+{
+	margin-top: 3px;
 }

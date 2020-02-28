@@ -16,11 +16,9 @@
 					<img src="img/Logo.svg" alt="">
 				</div>
 				<div class="hedaerSingBtns">
-					<div class="signInBtn">
-						<a href="#">войти</button>
-					</div>
-					<div class="signUpBtn">
-						<a href="#">регистрация</a>
+					<div class="userCabinet">
+						<div class="userCabinetImg"><img src="img/user.svg" alt=""></div>
+						<div class="userCabinetName">Анна</div>
 					</div>
 				</div>
 			</div>
@@ -49,10 +47,11 @@
 					<input type="text" placeholder="Название заголовка">
 				</div>
 				<div class="newOrderText">
-					<input type="text" placeholder="Текст">
+					<input type="text" multiple="multiple" placeholder="Текст">
 				</div>
 				<div class="newOrderBtns">
-					<button class="newOrderAddPhoto">Прикрепить фото</button>
+					<input type="file" id="file" name="file" class="newOrderAddPhoto" data-multiple-caption="{count} files selected" multiple>
+					<label class="qwe" for="file"><span>Прикрепить фото</span></label>
 					<button class="newOrderSend">Отправить</button>
 				</div>
 			</div>
@@ -182,5 +181,6 @@
 		</div>
 	</footer>
 	<script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
