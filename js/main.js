@@ -1,18 +1,24 @@
- $(document).ready(function(){
-    //Скрыть PopUp при загрузке страницы    
-    PopUpHide();
-});
-//Функция отображения PopUp
-function PopUpShow(popupName){
-    $("#signInPopup").show();
-}
-
-$("#signInBtnn").on("click", function(){
-    PopUpShow("#signInPopup");
+$('.signUpBtn').on('click', () => {
+	$('.signUpPopupWr').fadeIn(500);
 });
 
-//Функция скрытия PopUp
-function PopUpHide(){
-    $("#signInPopup").hide();
-    $("#signUpPopup").hide();
-}
+$('.signInBtn').on('click', () => {
+	$('.signInPopupWr').fadeIn(500);
+});
+
+$('.signUpPopupClose').on('click', () => {
+	$('.signUpPopupWr').fadeOut(500);
+});
+
+$('.signInPopupClose').on('click', () => {
+	$('.signInPopupWr').fadeOut(500);
+});
+
+$('.signUpPopupCross').on('click', () => {
+	$('.signUpPopupWr').fadeOut(500);
+});	
+
+$('.signInPopupCross').on('click', () => {
+	$('.signInPopupWr').fadeOut(500);
+});	
+ 

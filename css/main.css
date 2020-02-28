@@ -3,20 +3,13 @@
 	margin: 0;
 }
 
+
 .container
 {
 	max-width: 1170px;
 	width: 100%;
 	padding:0 15px;
 	margin: 0 auto;
-}
-
-a
-{
-	text-decoration: none;
-	color: #0055A6;
-	font-size: 20px;
-	font-family: Roboto;
 }
 
 /******************** HEADER ********************/
@@ -31,6 +24,11 @@ a
 {	
 	display: flex;
 	align-self: center;
+	text-decoration: none;
+	color: #0055A6;
+	font-size: 20px;
+	font-family: Roboto;
+	cursor: pointer;
 }
 
 .signInBtn
@@ -157,7 +155,7 @@ a
 	color: #0055A6;
 }
 
-
+/******************** SINGIN ********************/
 
 .signInPopupWr
 {
@@ -168,9 +166,12 @@ a
 
 .signInPopupClose
 {
-	position: absolute;
+	position: fixed;
+	left: 0;
+	top: 0;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,0.5);
 }
 
 .singInPopup
@@ -189,9 +190,17 @@ a
 .signInPopup
 {
 	width: 470px;
-	height: 400px;
 	border-radius: 21px;
 	background: #F4F4F4;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
 }
 
 .signInPopupTitle
@@ -209,6 +218,7 @@ a
 {
 	display: flex;
 	justify-content: space-around;
+	margin-bottom: 70px;
 }
 
 .signInPopupButtons button
@@ -268,3 +278,115 @@ a
 {
 	margin-top: 200px;
 }
+
+
+/******************** SINGIN ********************/
+
+
+
+
+
+
+/******************** SINGUP ********************/
+
+
+
+.signUpPopup
+{
+	width: 470px;
+	border-radius: 21px;
+	background: #F4F4F4;
+}
+
+.signUpPopupCross
+{
+	position: absolute;
+	top: 41px;
+	right: 29px;
+	cursor: pointer;
+}
+
+.signUpPopup
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.signUpPopupInputs
+{
+	margin-top: 60px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+}
+
+.signUpPopupInputs input
+{
+	width: 335px;
+	height: 47px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	background: #F5F5F5;
+	border: 1px solid #0055A6;
+	font-size: 15px;
+	line-height: 20px;
+	color: #212121;
+	font-family: Montserrat;
+	padding: 14px 0;
+	padding-left: 10px;
+}
+
+
+.signUpPopupClose
+{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,0.5);
+}
+
+.signUpPopupButtons
+{
+	margin-bottom: 50px;
+}
+
+.signUpPopupButtons button
+{
+	font-family: Montserrat; 
+	font-size: 15px;
+	width: 150px;
+	height: 41px;
+	background: #0055A6;
+	border-radius: 6px;
+	border: unset;
+	color: #FFFFFF;
+
+}
+
+.signUpPopupInputPassword
+{
+	margin-bottom: 27px;
+}
+
+.signUpPopupInputPasswordRepeat
+{
+	margin-bottom: 50px;
+}
+
+.signUpPopupInputLogin
+{
+	margin-bottom: 27px;
+}
+
+signUpPopupInputs 
+
+
+/******************** SINGUP ********************/
