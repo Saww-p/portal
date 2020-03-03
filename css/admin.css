@@ -21,6 +21,7 @@
 
 .categorie
 {
+	position: relative;
 	display: flex;
 	width: 335px;
 	height: 47px;
@@ -40,6 +41,34 @@
 	color: #212121;
 }
 
+.categorieAdd
+{
+	position: relative;
+	display: flex;
+	width: 17px;
+	height: 17px;
+	margin-left: 20px;
+}
+
+.categorieGor
+{
+	position: absolute;
+	width: 17px;
+	height: 1.5px;
+	top: 8px;
+	background-color: #000;
+}
+
+.categorieVert
+{
+	left: 8px;
+	position: absolute;
+	width: 1.5px;
+	height: 17px;
+	background-color: #000;
+
+}
+
 .categorieDelete
 {
 	margin-top: 11px;
@@ -47,4 +76,123 @@
 	width: 17px;
 	height: 1px;
 	background-color: #000000;
+}
+.categories
+{
+	margin-bottom: -27px;
+}
+
+.adminOrderButtonCancel button
+{
+	width: 310px;
+	height: 36px;
+	border: unset;
+	background: #5FB053;
+	border-radius: 4px;
+
+	font-family: Roboto;
+	font-size: 16px;
+	line-height: 19px;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
+
+.adminOrderButtonAccept button
+{
+	width: 310px;
+	height: 36px;
+	border: unset;
+	background: #0055A6;
+	border-radius: 4px;
+
+	font-family: Roboto;
+	font-size: 16px;
+	line-height: 19px;
+	color: #FFFFFF;
+	margin-bottom: 
+}
+
+.adminOrdersWr
+{
+	padding-top: 100px;
+}
+
+.adminOrders
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: -15px;
+}
+
+.adminOrder
+{
+	width: 370px;
+	background-color: #E2E2E2;
+	padding-bottom: 51px;
+	margin: 15px;
+
+}
+
+.adminOrder img
+{
+	width: 370px;
+	height: 190px;
+}
+
+.adminOrderText
+{
+	margin-top: 29px;
+	margin-bottom: 10px;
+	font-family: Montserrat;
+	font-size: 16px;
+	line-height: 26px;
+	color: #212121;
+}
+
+.adminOrdersContent
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.adminOrderContent
+{
+	padding: 0 30px;
+}
+
+.adminOrderStatus
+{
+	margin-bottom: 40px;
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 26px;
+	color: #212121;
+}
+
+.adminOrdersBtn
+{
+	align-self: center;
+}
+
+.adminOrdersBtn button
+{
+	font-family: Montserrat;
+	font-weight: bolder;
+	font-size: 16px;
+	line-height: 26px;
+	color: #fff;
+	padding: 11px;
+	width: 870px;
+	background-color: #0055A6;
+	border-radius: 6px;
+	text-align: center;
+	margin-top: 113px;
+	margin-bottom: 113px;
+	border: unset;
+}
+
+.adminOrdersWr
+{
+	background-color: #F7F7F7;
 }
