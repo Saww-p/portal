@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="headerWr">
+		<div class="container">
+			<div class="header">
+				<div class="headerLogo">
+					<img src="img/Logo.svg" alt="">
+				</div>
+				<div class="hedaerSingBtns">
+					<div class="signInBtn">
+						<a href="file:///C:/Program%20Files/%D0%9F%D0%9A%D0%A1-16/%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB/singUp.html">войти</button>
+					</div>
+					<div class="signUpBtn">
+						<a href="#" id="asd">регистрация</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="signInPopupWr" style="display: none;">
+		<div class="signInPopup">
+			<div class="signInPopupClose"></div>
+			<div class="signInPopupContent">
+				<div class="signInPopupTitle">Войти в аккаунт</div>
+				<div class="signInPopupInputs">
+					<input type="text" class="signInPopupInputLogin" placeholder="Логин">
+					<input type="text" class="signInPopupInputPassword" placeholder="Пароль">
+				</div>
+				<div class="signInPopupButtons">
+					<button>Войти</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footerWr">
+		<div class="container">
+			<div class="footer">
+				<div class="footerCopyright">
+					2020 © АО Услуги
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	
+	<script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+	<!-- <script src="js/main.js"></script> -->
+	<script>
+		
+		$('#asd').on('click', (e) => {
+			e.preventDefault();
+			$('.signInPopupWr').fadeIn();
+		});
+
+		$('#close').on('click', (e) => {
+			e.preventDefault();
+			$('.signInPopupWr #close').hide();
+		});
+
+	</script>
+</body>
+</html>

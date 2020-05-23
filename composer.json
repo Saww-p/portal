@@ -1,0 +1,6 @@
+{
+	"require-dev": {
+		"codeception/codeception": "^3",
+		"sendgrid/sendgrid": "~7"
+	}
+}
